@@ -25,6 +25,8 @@ gem "stimulus-rails"
 
 # Use Redis adapter to run Action Cable in production
 gem "redis", ">= 4.0.1"
+# fontowsome
+gem "font-awesome-sass", "~> 6.1"
 
 # gem simple forme
 gem "simple_form"
