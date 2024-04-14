@@ -28,6 +28,9 @@ gem "redis", ">= 4.0.1"
 # fontowsome
 gem "font-awesome-sass", "~> 6.1"
 
+# autoprefixer
+gem "autoprefixer-rails"
+
 # gem simple forme
 gem "simple_form"
 # scss
