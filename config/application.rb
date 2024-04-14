@@ -13,6 +13,8 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
 require "rails/test_unit/railtie"
+# langue par féfaut le francais
+config.i18n.default_locale = :fr
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
