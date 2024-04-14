@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  # Page d'accueil
-  root 'pages#home'
+  # Redirect root to the new action of ReservationsController
+  root 'reservations#new'
 
-  # Routes pour les réservations de taxi
+  # Other routes...
+
+  # Routes for taxi reservations
   resources :reservations, only: [:new, :create, :show]
-
-  # Autres routes si nécessaire
 end

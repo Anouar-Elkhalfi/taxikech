@@ -15,22 +15,22 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :start_location, "Point de départ" %>
+    <%= form.label :start_location %>
     <%= form.text_field :start_location %>
   </div>
 
   <div class="field">
-    <%= form.label :end_location, "Destination" %>
+    <%= form.label :end_location %>
     <%= form.text_field :end_location %>
   </div>
 
   <div class="field">
-    <%= form.label :reservation_date, "Date de réservation" %>
+    <%= form.label :reservation_date %>
     <%= form.date_field :reservation_date %>
   </div>
 
   <div class="field">
-    <%= form.label :reservation_time, "Heure de réservation" %>
+    <%= form.label :reservation_time %>
     <%= form.time_field :reservation_time %>
   </div>
 
@@ -38,4 +38,3 @@
     <%= form.submit "Réserver un taxi" %>
   </div>
 <% end %>
-
