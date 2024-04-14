@@ -1,2 +1,41 @@
 <h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<p>reserver votre trajet</p>
+
+
+<%= form_with(model: @reservation, url: reservations_path, local: true) do |form| %>
+  <% if @reservation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reservation.errors.count, "error") %> prohibited this reservation from being saved:</h2>
+      <ul>
+        <% @reservation.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :start_location, "Point de départ" %>
+    <%= form.text_field :start_location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_location, "Destination" %>
+    <%= form.text_field :end_location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reservation_date, "Date de réservation" %>
+    <%= form.date_field :reservation_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reservation_time, "Heure de réservation" %>
+    <%= form.time_field :reservation_time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Réserver un taxi" %>
+  </div>
+<% end %>
+
