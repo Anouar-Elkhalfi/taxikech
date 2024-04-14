@@ -30,6 +30,8 @@ gem "redis", ">= 4.0.1"
 gem "simple_form"
 # scss
 gem "sassc-rails"
+# gem boostrapp
+gem "bootstrap", "~> 5.2"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
