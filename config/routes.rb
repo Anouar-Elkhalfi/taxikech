@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  # Redirect root to the new action of ReservationsController
   root 'reservations#new'
+  resources :reservations, only: [:new, :create, :show]
 end
-
