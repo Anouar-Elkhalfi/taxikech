@@ -1,6 +1,13 @@
 class ReservationsController < ApplicationController
   def new
     @reservation = Reservation.new
+    if params[:driver_id]
+      @driver = Driver.find_by(id: params[:driver_id])
+      if @driver.nil?
+        flash[:alert] = "Driver not found."
+        redirect_to drivers_path # redirect somewhere appropriate if driver is not found
+      end
+    end
   end
 
   def create

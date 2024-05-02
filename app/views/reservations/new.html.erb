@@ -28,6 +28,24 @@
         </div>
       <% end %>
 
+
+
+        <h1>Driver Details</h1>
+
+        <!-- app/views/reservations/new.html.erb -->
+          <%= form_for @reservation do |f| %>
+            <% if @driver %>
+              <p>Reservation for <%= @driver.name %></p>
+              <%= f.hidden_field :driver_id, value: @driver.id %>
+            <% end %>
+            <!-- Your other fields here -->
+            <%= f.submit "Book Reservation" %>
+          <% end %>
+
+
     </div>
   </div>
 </div>
+
+
+<!-- app/views/drivers/show.html.erb -->
