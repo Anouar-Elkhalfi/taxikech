@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_location: MyString
+  end_location: MyString
+  reservation_date: 2024-05-02
+  reservation_time: 2024-05-02 20:40:43
+
+two:
+  start_location: MyString
+  end_location: MyString
+  reservation_date: 2024-05-02
+  reservation_time: 2024-05-02 20:40:43
