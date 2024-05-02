@@ -30,6 +30,9 @@ gem "font-awesome-sass", "~> 6.1"
 
 # autoprefixer
 gem "autoprefixer-rails"
+# faker
+gem 'faker'
+
 
 # gem simple forme
 gem "simple_form"
